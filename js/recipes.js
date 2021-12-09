@@ -24,7 +24,14 @@ debugger
     })
 }
 
+//getRecipes('recipes/complexSearch', {
+  //  diet: '1,2,3,4,5,6,7,8,9', 
+    //maxReadyTime: '10,11,12,13,14',
+//})
+
 getRecipes('recipes/complexSearch', {
-    diet: '1,2,3,4,5,6,7', 
-    maxReadyTime: '10,11,12,13,14',
+    query: 'pasta',
+    maxFat: '25',
+    number: '2',
 })
+

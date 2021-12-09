@@ -44,6 +44,8 @@
               <div class="card mt-2 mt-md-0">
                 <div class="card-body">
                   <h5 class="card-title mb-3">Search recipes</h5>
+                  <form>
+
                   <div class="mb-3">
                     <div class="input-group">
                         <div class="form-outline">
@@ -54,51 +56,51 @@
                         </button>
                     </div>
 
-                  <label class="form-label mt-3" id="diet" for="post-city">Diet</label>
+                  <label class="form-label mt-3" for="post-city">Diet</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="1" id="Gluten Free">
                     <label class="form-check-label" for="flexCheckDefault">
                       Gluten free
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="2" id="flexCheckChecked">
+                    <input class="form-check-input" type="checkbox" value="2" id="Ketogenic">
                     <label class="form-check-label" for="flexCheckChecked">
                       Keto
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="3" id="flexCheckChecked">
+                    <input class="form-check-input" type="checkbox" value="3" id="Low FOODMAP">
                     <label class="form-check-label" for="flexCheckChecked">
                       Fodmap
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="4" id="flexCheckChecked">
+                    <input class="form-check-input" type="checkbox" value="4" id="Vegetarian">
                     <label class="form-check-label" for="flexCheckChecked">
                       Vegetarian
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="5" id="flexCheckChecked">
+                    <input class="form-check-input" type="checkbox" value="5" id="Whole30">
                     <label class="form-check-label" for="flexCheckChecked">
                       Whole 30
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="6" id="flexCheckChecked">
+                    <input class="form-check-input" type="checkbox" value="6" id="Vegan">
                     <label class="form-check-label" for="flexCheckChecked">
                       Vegan
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="7" id="flexCheckChecked">
+                    <input class="form-check-input" type="checkbox" value="7" id="Paleo">
                     <label class="form-check-label" for="flexCheckChecked">
                       Paleo
                     </label>
                   </div>
 
-                  <label class="form-label mt-3" id = "maxReadyTime" for="post-city">Ready in</label>
+                  <label class="form-label mt-3" for="post-city">Ready in</label>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="10" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
@@ -133,29 +135,40 @@
                   <label for="customRange2" class="form-label mt-3">Calories</label>
                   <input type="range" class="form-range" min="1.51" max="1348.52" id="customRange2">
 
-                  <form>
-                
-                   
-                      <button id="create-post" type="button" class="btn btn-primary">Find</button>
-                  </form>
+                  
+                                 
+                  <button id="create-post" type="button" class="btn btn-primary">Find</button>
+                </form>
                 </div>
             </div>           
-           </div>
-            <div class="col">
-                <div class="card mt-2 mt-md-0">
-                    <div class="card-body">
-                      <h5 class="card-title mb-3">Result</h5>
-                      
+          </div>
 
-                      <ol id="recipes-list" class="list-group">
-                        
-                      </ol>
-
+          <div class="col">
+            <div class="card mt-2 mt-md-0">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="card-title">Result</h5>
+                    <div class="btn-group" role="group" aria-label="Switch view">
+                      <button id="list-view" type="button" class="btn btn-primary">
+                        <i class="fas fa-th-list"></i>
+                      </button>
+                      <button id="grid-view" type="button" class="btn btn-outline-primary">
+                        <i class="fas fa-grip-horizontal"></i>
+                      </button>
                     </div>
+                  
+                  </div>
+                  <hr/>
+                  <div id="recipes-list" class="row">
+                    
+                  </div>
+          
                 </div>
             </div>
-        </div>
-        
+          </div>
+          </div>
+
+
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
               <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
